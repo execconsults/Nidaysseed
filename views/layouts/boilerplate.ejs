@@ -1,0 +1,157 @@
+<script>
+    
+    function googleTranslateElementInit() {
+        var translateElement = new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,ar,bn,de,es,fr,hi,it,ja,ko,nl,pl,pt,ru,th,tr,vi,zh-CN,zh-TW',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: false,
+            gaTrack: true,
+            noAutoflip: true, // Add this parameter to disable the top pop-up when a user selects a language
+            gaId: 'UA-XXXXXXXX-X'
+        }, 'google_translate_element');
+
+        var selectedLanguageInput = document.getElementById('selectedLanguageInput');
+
+        google.translate.TranslateElement.prototype.selectLanguage = function (lang) {
+            google.translate.TranslateElement.prototype.selectLanguage.apply(this, arguments);
+            selectedLanguageInput.value = lang;
+        };
+
+        var translateButton = document.createElement('button');
+        translateButton.className = 'goog-te-button';
+        translateButton.innerHTML = 'Translate';
+        translateButton.onclick = function () {
+            translateElement.showWidget();
+        };
+        document.getElementById('google_translate_element').appendChild(translateButton);
+    }
+
+
+</script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- viewport meta -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Nidaysseed Healthcare Services - Care With Love"
+        />
+        <meta
+          name="keywords"
+          content="healthcare, caregiver, healthcare staffing, home care"
+        />
+    
+        <title>Nidaysseed Healthcare Services - Care With Love</title>
+    
+        <!-- Favicon Icon -->
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+        <!-- revolution slider css -->
+        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" />
+        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="revolution/css/navigation.css"
+        />
+    
+        <!-- inject:css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+        <link rel="stylesheet" type="text/css" href="css/fontello.css" />
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="css/owl.theme.default.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="css/magnificpopup.css" />
+        <link rel="stylesheet" type="text/css" href="css/stylec4b7.css?v=7845914789" />
+        <!-- endinject -->
+    
+        <style>
+          .store-btns a {
+            display: inline-block;
+          }
+          .store-btns a:first-child {
+            margin: 0 1em 1em 0;
+          }
+          .store-btns img {
+            max-height: 60px;
+          }
+    
+          @media (max-width: 500px) {
+            .store-btns img {
+              max-height: 50px;
+            }
+          }
+          .timesheet-button {
+            color: #ffffff;
+            border-color: #5e0ea9;
+            background-color: #5e0ea9;
+            font-family: inherit;
+            padding: 0 36px;
+            height: 56px;
+            line-height: 56px;
+            min-width: 180px;
+            border-width: 0;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            border-style: solid;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 80px;
+            letter-spacing: 0em;
+            transition:.3s ease;
+          }
+          .timesheet-button:hover {
+            color:#fff;
+            background-color: #4b2b66;
+          }
+        </style>
+      </head>
+<style>
+    .bg-primary {
+      --tw-bg-opacity: 1;
+      background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+  }
+  </style>
+<body>
+    <%- include('./partials/navigation')%>
+        <%- body %>
+    
+    <%- include('./partials/footter')%>
+
+
+</body>
+
+
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/magnificpopup.js"></script>
+<script src="js/main.js"></script>
+
+<!-- <link rel="stylesheet" href="stylesheet/home.css">
+
+
+
+<script src="/javascript/home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script> 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://assets.website-files.com/5dd4413d36613959e9a5f5ea/js/webflow.300dc2d58.js" type="text/javascript"></script> -->
+<!-- Option 1: Include in HTML -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> -->
